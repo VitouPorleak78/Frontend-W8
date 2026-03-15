@@ -2,9 +2,9 @@ import React from "react";
 
 export default function CheckoutButton({ total }) {
   return (
-    <div className="checkout-button">
-      <p>Checkout</p>
-      <p className="right">{"$ " + total}</p>
-    </div>
+    <button className="checkout-button">
+      <span>Checkout</span>
+      <span>{"$ " + total.toFixed(2)}</span>
+    </button>
   );
 }
